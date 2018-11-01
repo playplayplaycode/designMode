@@ -1,6 +1,6 @@
-#介绍
+# 介绍
 观察者模式最重要的一个核心思想就是一个类是消息源，这个类负责给若干个需要这个消息的类进行传消息。只要能实现这个目的即可。在C++中其实有很简单的实现方法，那就是在消息源这个类中申明一个list，里边存放需要接受消息的类。然后负责操作这个list即可。
 
-#例子介绍
+# 例子介绍
 这个例子的背景是球员和教练。这里把教练的命令可以理解为消息源。然后把那么场上的球员理解为观察者。然后，消息源（教练）发出指令，观察者（球员）收到指令后做出相应的动作。
 ![ UML类图](http://www.plantuml.com/plantuml/png/jP7FJi9048Vl-nGJkBHe4y-2X8GeD-E1EndRKJVPFsHtMo3ekxjBfs8DgLuyTJhpRNxVpYvyG1TghSHQ1aKmii-UN4FkVezwgsYzioCXdXGUoC7ilIZWmReTkghNMzMfixHQewcWAERjiEiaPccnVED_KIhq7bheAAwuodnmqho2GKtNZCAaR8jy6hb6HbTKq5XP0UsfPAexMLeJo8Jy3cuIpjr7r9J5ysFu5f1-lpBqXbEcueFb-9h9ZijXlLk-msdQS_x5zHovgZam5VyPntbC77yk5aE8RvNn0q-sfsyElDGUMj6VKME3V3bSHiUWf0-pRZO7lKcDdclCEGiFYQPabXiQiz2b_Ip8LBLMdm00)
