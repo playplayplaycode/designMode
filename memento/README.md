@@ -1,0 +1,6 @@
+ 备忘录模式（Memento模式）：是行为模式之一。它的作用是保持某一个对象的转态，并且在需要的时候，恢复对象以前的状态。
+ 在备忘录模式中主要涉及到了三个类：
+ - originator这个类是需要被保存状态的类；
+ - Memento该类的对象由originator创建，主要用来保存originator的内部状态。
+ - Careataker负责在需要的情况下去保存或者恢复originator的状态。
+ ![](http://www.plantuml.com/plantuml/png/lP6_JiOm3CJtF8NrJUM3zWMGK14pYA4xYbehYiWVbBWigEzEt9gs4GCRK-NxdQsxjC-a4ytUgS6IGxWyeyT0yQBKaqv8-XqJjEq3iEw7g5unvHYWwmvfT3fds83wKj12fcI30VyMjCTxLcoWCcfJfbknDk9YpntpGcyOYswGNWfgMEDz5XwDp9_HJf35SJfKGNQV3qlWAum9DQ6CzS4VKRvmFUX7ie46jY_IMKobzA_ETUNDIV5VEfyJxZznpRYNMiFmsiwRcibxYMIG_doiQdTHFOPfzkuR)
