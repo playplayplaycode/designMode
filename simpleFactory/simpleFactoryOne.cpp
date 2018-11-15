@@ -36,9 +36,14 @@ class Factory
                 {
                         return new Banana;
                 }
-                if(strcmp(p,"pingguo") == 0)
+                else if(strcmp(p,"pingguo") == 0)
                 {
                         return new Apple;
+                }
+                else
+                {
+                        cout<<"该工厂不生产该产品"<<endl;
+                        return NULL;
                 }
         }
 };
@@ -48,6 +53,23 @@ int main()
         Factory *factory = new Factory();
         Fruit *fruit ;
         fruit = factory->create("pingguo");
-        fruit->getFruit();
+        if(fruit != NULL)
+        {
+                fruit->getFruit();
+        }
+        delete fruit;
+        fruit = factory->create("xianjiao");
+        if(fruit != NULL)
+        {
+                fruit->getFruit();
+        }
+        delete fruit;
+        fruit = factory->create("boluo");
+        if(fruit != NULL)
+        {
+                fruit->getFruit();
+        }
+        delete fruit;
+        delete factory;
         return 0;
 }
